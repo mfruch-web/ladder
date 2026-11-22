@@ -267,7 +267,7 @@ for (const dev of DEVICES) {
   check(/^Easy · Par \+1 🟩🟩🟨🟨 💡1$|^Easy · Par \+1 🟩🟩🟩🟨 💡1$|^Easy · Par \+1 🟩🟨🟨🟨 💡1$/.test(lines[1]), `share easy line (${lines[1]})`);
   check(lines[2] === 'Medium · gave up 🏳️', `share medium line (${lines[2]})`);
   check(lines[3] === 'Hard · Par 🟩🟩🟩🟩', `share hard line (${lines[3]})`);
-  check(lines[4] === 'ladder.example.com', `share url (${lines[4]})`);
+  check(lines[4] === 'ladder.mfrucht33.workers.dev', `share url (${lines[4]})`);
 
   // Progress survives a reload, and today's stats are recorded.
   await load(`?date=${DAY}&play=hard`);

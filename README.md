@@ -102,8 +102,9 @@ Hand-made lists in `tools/lists/`:
 
 ## Deploy
 
-Hosted on Cloudflare Pages, connected to the GitHub repo, so every push to `main` deploys automatically. Before sharing links:
-1. **Domain**: replace `ladder.example.com` with the real address in `index.html` (link-preview tags; they need full URLs or iMessage won't show the image) and `siteUrl` in `js/config.js` (share text). Once there's a final domain, add a redirect like Pipeflow's at the top of `index.html` so stats and streaks live at one address.
+**Live at https://ladder.mfrucht33.workers.dev**, hosted on Cloudflare (Workers static assets) and connected to this repo, so every push to `main` deploys automatically.
+
+1. **Domain**: when Ladder gets its own domain (or joins a shared games brand), update the address in `index.html` (canonical and link-preview tags; they need full URLs or iMessage won't show the image) and `siteUrl` in `js/config.js` (share text), and add a redirect like Pipeflow's at the top of `index.html` so stats and streaks live at one address. Saved progress belongs to the address, so it's best to switch before many people play.
 2. Set `launchDate` in `js/config.js` to the day puzzle #1 goes live.
 3. Fill in the placeholders in `privacy.html`.
 

@@ -7,7 +7,7 @@ window.LADDER_CONFIG = {
   launchDate: '2026-11-22',
 
   // Shown at the end of the share text. Set it to your real domain.
-  siteUrl: 'ladder.example.com',
+  siteUrl: 'ladder.mfrucht33.workers.dev',
 
   // Each hint adds this many steps to your score.
   hintPenalty: 1,
