@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <script>
+    var h = location.hostname;
+    if (h.endsWith('workers.dev') || h.endsWith('pages.dev') || h === 'www.playwordladders.com' || (location.protocol === 'http:' && h === 'playwordladders.com'))
+      location.replace('https://playwordladders.com/privacy.html');
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Privacy Policy · Ladder</title>
   <link rel="stylesheet" href="css/styles.css">

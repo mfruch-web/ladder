@@ -6,8 +6,8 @@ window.LADDER_CONFIG = {
   // (Changing it only renumbers puzzles; which puzzle falls on which day stays the same.)
   launchDate: '2026-11-22',
 
-  // Shown at the end of the share text. Set it to your real domain.
-  siteUrl: 'ladder.mfrucht33.workers.dev',
+  // Shown at the end of the share text.
+  siteUrl: 'playwordladders.com',
 
   // Each hint adds this many steps to your score.
   hintPenalty: 1,

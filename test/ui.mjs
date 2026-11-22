@@ -79,16 +79,15 @@ async function shot(name) {
   const r = await send('Page.captureScreenshot', { format: 'png' });
   writeFileSync(join(SHOTS, `${name}.png`), Buffer.from(r.result.data, 'base64'));
 }
-// Wipe saved progress. Done from a blank page, because the game saves on pagehide.
+// Wipe saved progress. Done from the privacy page (same site, no game code), because the
+// game saves on pagehide and would otherwise write its progress back.
 async function wipe() {
-  await send('Page.navigate', { url: 'about:blank' });
-  await sleep(400);
-  const origin = BASE.replace(/\/$/, '');
+  await send('Page.navigate', { url: BASE + 'privacy.html' });
+  await sleep(500);
   for (let i = 0; i < 5; i++) {
-    await send('Storage.clearDataForOrigin', { origin, storageTypes: 'local_storage' });
+    await evaluate('localStorage.clear()');
     await sleep(100);
-    const items = await send('DOMStorage.getDOMStorageItems', { storageId: { securityOrigin: origin, isLocalStorage: true } });
-    if (!items.result || !items.result.entries || items.result.entries.length === 0) return;
+    if ((await evaluate('localStorage.length')) === 0) return;
   }
   throw new Error('could not clear saved progress');
 }
@@ -267,7 +266,7 @@ for (const dev of DEVICES) {
   check(/^Easy · Par \+1 🟩🟩🟨🟨 💡1$|^Easy · Par \+1 🟩🟩🟩🟨 💡1$|^Easy · Par \+1 🟩🟨🟨🟨 💡1$/.test(lines[1]), `share easy line (${lines[1]})`);
   check(lines[2] === 'Medium · gave up 🏳️', `share medium line (${lines[2]})`);
   check(lines[3] === 'Hard · Par 🟩🟩🟩🟩', `share hard line (${lines[3]})`);
-  check(lines[4] === 'ladder.mfrucht33.workers.dev', `share url (${lines[4]})`);
+  check(lines[4] === 'playwordladders.com', `share url (${lines[4]})`);
 
   // Progress survives a reload, and today's stats are recorded.
   await load(`?date=${DAY}&play=hard`);

@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- When Ladder gets its own domain, add a redirect to it here like Pipeflow's
-       (one home address keeps saved stats and streaks in one place). -->
-  <link rel="canonical" href="https://ladder.mfrucht33.workers.dev/">
+  <script>
+    // One home address: https://playwordladders.com. Saved stats and streaks belong to a single
+    // address, so send www, plain http, and the old workers.dev link there (keeping any ?query).
+    (function () {
+      var h = location.hostname;
+      if (h.endsWith('workers.dev') || h.endsWith('pages.dev')) location.replace('https://playwordladders.com/' + location.search);
+      else if (h === 'www.playwordladders.com' || (h === 'playwordladders.com' && location.protocol === 'http:'))
+        location.replace('https://playwordladders.com' + location.pathname + location.search);
+    })();
+  </script>
+  <link rel="canonical" href="https://playwordladders.com/">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
   <title>Ladder: The Daily Word Ladder</title>
   <meta name="description" content="A new word ladder every day. Change one letter at a time to climb from one word to another, in as few steps as you can. Three puzzles a day: Easy, Medium and Hard.">
@@ -13,16 +21,15 @@
   <meta property="og:title" content="Ladder: The Daily Word Ladder">
   <meta property="og:description" content="Change one letter at a time to get from one word to another. Three new puzzles every day.">
   <meta property="og:type" content="website">
-  <!-- Link previews (iMessage, WhatsApp, social) need full URLs. When Ladder moves to its
-       own domain, update these, the canonical link, and siteUrl in js/config.js. -->
-  <meta property="og:url" content="https://ladder.mfrucht33.workers.dev/">
-  <meta property="og:image" content="https://ladder.mfrucht33.workers.dev/og-image.png">
+  <!-- Link previews (iMessage, WhatsApp, social) need full URLs. -->
+  <meta property="og:url" content="https://playwordladders.com/">
+  <meta property="og:image" content="https://playwordladders.com/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Ladder: a daily word ladder. COLD, CORD, WORD, WARD, WARM.">
   <meta property="og:site_name" content="Ladder">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://ladder.mfrucht33.workers.dev/og-image.png">
+  <meta name="twitter:image" content="https://playwordladders.com/og-image.png">
   <!-- iPhone home screen app -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
