@@ -1,0 +1,16 @@
+# Common-list words removed after manual review (obscure, archaic, odd, or awkward).
+# 4 letters: archaic, obscure or odd
+anon ares bade bide bloc bode bung buts caws dais dons doer duff emir feds gees gent
+hale hark hart hind hock hows lain lass lest lieu lope mads mans mart mete mews mire
+morn muss nigh ogle peon pate pram quay rout ruff sari seer sine sire sirs swum tiff
+ting tome thee thou tong tout unto vane writ zeta
+# 4 letters: contractions without the apostrophe, proper nouns
+cant wont shes mars
+# 4 letters: tone
+gays scum kink bums gory cyst oral
+# 5 letters: archaic, obscure, British or odd
+gimme goner harem hippy harry junta leper lorry maria mamma mamas nappy ninny nymph
+offed peter pence roman shire tonne whats inter payed reals outed fiver privy prude
+sally pokey gents dames babes kinks louse roach
+# 5 letters: tone
+bigot belch feces felon obese vomit mucus lymph ulcer trump grope

@@ -1,0 +1,31 @@
+# Words that are never accepted, not even as guesses: slurs, sexual and crude terms.
+# One word per line; '#' starts a comment. Only 4- and 5-letter words matter, but
+# inflections are listed explicitly so nothing slips through.
+# The LDNOOBW list (tools/sources/ldnoobw.txt) is applied on top of this, minus allow-guess.txt.
+
+# Ethnic, racial, religious and other slurs
+chink chinks coon coons dago dagos dagoes darky darkie gook gooks gooky
+kike kikes kyke spic spics spick spicks spik wop wops wog wogs gyp gyps gypped
+gypsy kraut krauts honky honkie hymie hebe hebes yid yids mick micks paki pakis
+negro nigga nigga niggs jap japs squaw squaws injun kafir kaffir abos
+coolie wetback limey limeys gringo
+# Homophobic, transphobic and ableist slurs
+fag fags faggy fagot fagots faggot dyke dykes dyked dykey homo homos queer queers
+tranny trannie spaz spazz spazzy tard tards retard gimp gimps gimpy
+# Sexual
+fuck fucks fucky cunt cunts twat twats cock cocks dick dicks dicky dildo dildos
+penis vulva vulvae vulvas clit clits anal anus anuses arse arses ass asses
+tits titty titties boob boobs booby boobie pubes pubic pubis porn porns porno pornos porny
+semen sperm sperms jism jisms gism gisms jizz cum cums spunk spunks spunky
+wank wanks wanky orgy orgies horny smut smuts smutty sexy sext sexts sexed sexes
+slut sluts slutty whore whores whored skank skanks skanky slag slags bimbo bimbos
+pimp pimps pimped poon poons pussy puss pusses muff muffs shag shags shagged
+hump humps humped humpy bonk bonks bonked boner boners prick pricks
+schlong dong dongs wang wangs schmuck putz putzes milf nude nudes nudie
+rape raped raper rapes rapist incest perv pervs pervy lewd
+# Crude bodily terms
+shit shits shitty piss pissy pisses pissed turd turds crap craps crappy
+fart farts farted puke pukes puked barf barfs barfed snot snots snotty
+poop poops pooped pooper
+# Other
+nazi nazis butt butts butty

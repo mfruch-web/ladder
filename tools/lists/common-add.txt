@@ -1,0 +1,1 @@
+# Everyday words added to the common list that the frequency data missed.

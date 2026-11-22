@@ -1,0 +1,57 @@
+<!doctype html>
+<!-- Source for og-image.png (the preview shown when the link is shared).
+     Re-render with: node tools/render-og.mjs -->
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html, body { margin: 0; }
+  body {
+    width: 1200px; height: 630px; overflow: hidden;
+    background: #f7f5f0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    display: flex; align-items: center; gap: 80px; padding: 0 90px; box-sizing: border-box;
+  }
+  .copy { flex: 1; }
+  .logo { width: 110px; height: 110px; display: block; margin-bottom: 26px; }
+  h1 { font-family: "Iowan Old Style", Palatino, Georgia, serif; font-size: 112px; margin: 0; color: #1b1d21; letter-spacing: -2px; line-height: 1; }
+  p { font-size: 34px; line-height: 1.25; color: #3b3f46; margin: 22px 0 0; }
+  .levels { display: flex; gap: 14px; margin-top: 34px; }
+  .lv { font-size: 24px; font-weight: 700; padding: 10px 20px; border-radius: 999px; background: #fff; color: #1b1d21; box-shadow: 0 2px 6px rgba(0,0,0,.08); display: flex; align-items: center; gap: 10px; }
+  .lv i { width: 14px; height: 14px; border-radius: 50%; display: inline-block; }
+  .ladder { display: flex; flex-direction: column; gap: 10px; padding: 22px 34px; position: relative; }
+  .ladder::before, .ladder::after { content: ""; position: absolute; top: 10px; bottom: 10px; width: 6px; border-radius: 3px; background: #d7cfbf; left: 14px; }
+  .ladder::after { left: auto; right: 14px; }
+  .row { display: flex; gap: 8px; }
+  .t { width: 76px; height: 76px; border-radius: 12px; background: #ebe7de; display: grid; place-items: center; font-size: 40px; font-weight: 800; color: #1b1d21; }
+  .m { background: #dff1df; color: #3fa34d; }
+  .c { box-shadow: inset 0 -6px 0 #e8772e; }
+  .m.c { box-shadow: inset 0 -6px 0 #3fa34d; }
+  .goal .t { background: #3fa34d; color: #fff; }
+</style>
+</head>
+<body>
+  <div class="copy">
+    <svg class="logo" viewBox="0 0 100 100">
+      <rect x="4" y="4" width="92" height="92" rx="22" fill="#e8772e"/>
+      <path d="M34 34H66" stroke="#ffd9b8" stroke-width="7" stroke-linecap="round"/>
+      <path d="M34 50H66M34 66H66" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+      <path d="M34 18V82M66 18V82" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+    </svg>
+    <h1>Ladder</h1>
+    <p>Change one letter at a time.<br>Three new word ladders every day.</p>
+    <div class="levels">
+      <span class="lv"><i style="background:#3fa34d"></i>Easy</span>
+      <span class="lv"><i style="background:#e8b923"></i>Medium</span>
+      <span class="lv"><i style="background:#e5484d"></i>Hard</span>
+    </div>
+  </div>
+  <div class="ladder">
+    <div class="row"><div class="t">C</div><div class="t">O</div><div class="t">L</div><div class="t">D</div></div>
+    <div class="row"><div class="t">C</div><div class="t">O</div><div class="t m c">R</div><div class="t">D</div></div>
+    <div class="row"><div class="t m c">W</div><div class="t">O</div><div class="t m">R</div><div class="t">D</div></div>
+    <div class="row"><div class="t m">W</div><div class="t m c">A</div><div class="t m">R</div><div class="t">D</div></div>
+    <div class="row goal"><div class="t">W</div><div class="t">A</div><div class="t">R</div><div class="t">M</div></div>
+  </div>
+</body>
+</html>

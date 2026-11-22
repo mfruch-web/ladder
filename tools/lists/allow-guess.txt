@@ -1,0 +1,3 @@
+# LDNOOBW entries that are ordinary words. They stay valid guesses, but
+# block-puzzle.txt still keeps the touchy ones out of puzzles.
+scat snatch escort grope suck sucks

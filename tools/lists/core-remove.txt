@@ -1,0 +1,15 @@
+# Common words that are fine on a path but too odd to start or end a puzzle.
+# Tone
+hell dumb drug thug pope amen lice babe lust dead bible booze drunk filth psych rabbi
+vicar dying death pagan abort arson abuse rifle vodka cigar macho lover loony manic
+# Names and slang
+mike meow
+# Greek letters
+beta theta sigma omega gamma alpha delta
+# Function words and interjections make dull start/target words
+also been else from goes hers into onto ours than that them then they this thus upon
+what when whom with your were very much such each only once here some none both okay
+whoa whew ouch gosh yuck info data even ever over just
+their there these those which where while whose would could shall might ought about
+above after again among every other since until under yours being doing using going
+hello along aside ahead
